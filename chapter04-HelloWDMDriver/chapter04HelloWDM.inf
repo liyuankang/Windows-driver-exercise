@@ -4,6 +4,7 @@
 
 [Version]
 Signature="$WINDOWS NT$"
+CatalogFile=chapter04-HelloWDM.cat
 
 ;如果设备是一个标准类别，使用标准类的名称和GUID 否则创建一个自定义的类别名称，并自定义它的GUID  
 ;自定义的类别在注册表中 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\ 有显示 
@@ -47,7 +48,7 @@ chapter04-HelloWDM.sys
 
 [SourceDisksFiles]
 ;源驱动文件在标记为1的磁盘下
-DriverFilesName=1
+chapter04-HelloWDM.sys=1
 
 
 ;这里是设置制作商相关的选项，注意这里VS默认生成的标准设备的配置 如：%ManufacturerName%=Standard,NT$ARCH$  
